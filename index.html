@@ -6,13 +6,6 @@
   <title>Fin for Platforms</title>
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- HubSpot Settings - Must be before the HubSpot script -->
-  <script>
-    window.hsConversationsSettings = {
-      loadImmediately: false
-    };
-  </script>
-  
   <!-- Cookie Reset Script -->
   <script>
     function reset() {
@@ -45,31 +38,21 @@
     <button class="bg-black text-white p-2 m-2 rounded hover:bg-opacity-75" onclick="reset()">Reset</button>
   </div>
   
-  <!-- Intercom Script with handoff function -->
+  <!-- Intercom Script -->
   <script>
     window.intercomSettings = {
       api_base: "https://api-iam.intercom.io",
-      app_id: "q44qconr",
-      handoff_with_javascript: () => {
-        // Load and open HubSpot widget when handoff is triggered
-        if (window.HubSpotConversations) {
-          // First load the widget
-          window.HubSpotConversations.widget.load();
-          // Then explicitly open it after a short delay to ensure it's loaded
-          setTimeout(() => {
-            window.HubSpotConversations.widget.open();
-          }, 100);
-        }
-      }
+      app_id: "kt6kiz1d"
     };
   </script>
   
   <!-- Intercom Widget Code -->
   <script>
-    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/q44qconr';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/kt6kiz1d';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
   </script>
   
-  <!-- HubSpot Widget Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/146126437.js"></script>
+  <!-- Start of sipoffreedomsupport Zendesk Widget script -->
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e639b68e-0077-4834-b51a-8f26f763915f"></script>
+  <!-- End of sipoffreedomsupport Zendesk Widget script -->
 </body>
 </html>
